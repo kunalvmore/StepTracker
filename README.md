@@ -13,10 +13,9 @@ python3 -m http.server 8000   # then open http://localhost:8000
 ## Before launch
 
 1. **Domain.** The site is set up for `https://kunalvmore.github.io/StepTracker/`. If you move to a custom domain, update the canonical and Open Graph tags in each page’s `<head>`.
-2. **App Store link.** Replace every `href="#download"` on the badges with your App Store URL once the app is live.
-3. **Smart App Banner.** Uncomment the `apple-itunes-app` meta tag in each page's `<head>` and add your App ID.
-4. **Official badge.** Swap the drawn "Download on the App Store" badge for Apple's official SVG from Apple's Marketing Resources page.
-5. **App Store Connect.** Use `https://yourdomain/privacy.html` as the Privacy Policy URL and `https://yourdomain/support.html` as the Support URL.
+2. **App Store link and Smart App Banner.** Set up for App ID `6837991257`. The badges link to `https://apps.apple.com/app/id6837991257`, which starts working when the app is live. Safari only shows the banner once the app is on the store.
+3. **Official badge.** Swap the drawn "Download on the App Store" badge for Apple's official SVG from Apple's Marketing Resources page.
+4. **App Store Connect.** Privacy Policy URL: `https://kunalvmore.github.io/StepTracker/privacy.html` · Support URL: `https://kunalvmore.github.io/StepTracker/support.html`
 
 ## Hosting (free)
 

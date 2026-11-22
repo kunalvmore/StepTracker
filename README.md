@@ -12,7 +12,7 @@ python3 -m http.server 8000   # then open http://localhost:8000
 
 ## Before launch
 
-1. **Domain.** Replace `https://steptracker.example` with your real URL in the `<head>` of each page (canonical and Open Graph tags).
+1. **Domain.** The site is set up for `https://kunalvmore.github.io/StepTracker/`. If you move to a custom domain, update the canonical and Open Graph tags in each page’s `<head>`.
 2. **App Store link.** Replace every `href="#download"` on the badges with your App Store URL once the app is live.
 3. **Smart App Banner.** Uncomment the `apple-itunes-app` meta tag in each page's `<head>` and add your App ID.
 4. **Official badge.** Swap the drawn "Download on the App Store" badge for Apple's official SVG from Apple's Marketing Resources page.

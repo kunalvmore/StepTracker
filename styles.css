@@ -348,3 +348,30 @@ footer { margin-top: 60px; border-top: .5px solid rgba(0, 0, 0, .07); }
 .chip-row strong span { display: inline; font-size: inherit; color: inherit; font-weight: inherit; }
 .floaty img { max-width: none; }
 .la-icon img { width: 100%; height: 100%; }
+
+/* ---------- inside the app (Settings opens pages with ?app=1) ---------- */
+.in-app .nav, .in-app footer, .in-app .hide-in-app, .in-app .page-head .eyebrow, .in-app .blobs { display: none; }
+.in-app .page-head { padding: 20px 0 8px; }
+.in-app .page-head .h1 { font-size: 34px !important; margin-top: 0 !important; }
+.in-app main { padding-bottom: calc(env(safe-area-inset-bottom) + 120px); }
+.in-app .help-cards { grid-template-columns: 1fr 1fr; }
+@media (max-width: 520px) { .in-app .help-cards { grid-template-columns: 1fr; } }
+.in-app .legal h2:first-child { margin-top: 24px; }
+@media (prefers-color-scheme: dark) {
+  .in-app {
+    color-scheme: dark;
+    --accent: #8B8CFF;
+    --ink: #F5F5F7;
+    --sec: rgba(245, 245, 247, .68);
+    --ter: rgba(245, 245, 247, .45);
+    --bg: #000;
+    --card: #1C1C1E;
+    --soft: linear-gradient(135deg, #1E1B3A, #2A1B36);
+    --shadow: 0 0 0 .5px rgba(255, 255, 255, .08);
+  }
+  .in-app body { background: var(--bg); color: var(--ink); }
+  .in-app .legal p, .in-app .legal li { color: var(--sec); }
+  .in-app .blob { opacity: .45; }
+  .in-app .pills span { background: rgba(255, 255, 255, .08); }
+  .in-app .help .btn { box-shadow: none; }
+}
